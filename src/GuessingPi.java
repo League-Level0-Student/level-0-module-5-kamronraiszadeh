@@ -3,7 +3,11 @@
  *    Level 0
  */
 
+import java.text.BreakIterator;
+
 import javax.swing.JOptionPane;
+
+import org.omg.Messaging.SyncScopeHelper;
 
 public class GuessingPi {
 	// 1. Make a main method and make sure your program can run
@@ -37,12 +41,21 @@ public class GuessingPi {
 				// 6. Compare the user's input to the next digit of your pi variable 
 				//    (look at step 3 for a clue).
 				//    HINT: use charAt(0) to get 1st char of user input String 
-                     
+                   if (m.equals("3")) {
+					System.out.println("correct");
+				}
+                    		 
 					// 7. If they are correct, print out "correct".
 
 					// 8. If they are not, print out "incorrect" and tell them
 					//    to start over. Use 'break;' to break out of the loop.
-
+                   else {
+					System.out.println("incorrect");
+				
+				}
+                   
+                   break;
+                   
 }
 }
 }
